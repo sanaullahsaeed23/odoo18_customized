@@ -1,8 +1,4 @@
-1. Install
-  2. Python 3.10.
-  3. Postgresql
-  4. pgAdmin
-  5. Pycharm.
+1. Install --> Python 3.10. -> Postgresql -> pgAdmin -> Pycharm.
 6. Create venv of python. (python3.10 -m venv odoo-venv)
 7. Activate virtual enviornment: (odoo-venv\Scripts\activate)
 8. Install all required files by odoo in odoo-18.0/requiremnets.txt with command: (pip install -r requirements.txt)
