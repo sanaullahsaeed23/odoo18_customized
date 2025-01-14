@@ -1,0 +1,68 @@
+<odoo>
+      <!-- Custom Action -->
+    <record id="action_custom_crm_report" model="ir.actions.act_window">
+        <field name="name">Lead Reports</field>
+        <field name="res_model">crm.lead</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>
+                Analyze CRM leads by region, product, client, and more!
+            </p>
+        </field>
+    </record>
+
+     <!-- Pivot View -->
+<!--    <record id="view_custom_crm_lead_pivot" model="ir.ui.view">-->
+<!--        <field name="name">crm.lead.pivot</field>-->
+<!--        <field name="model">crm.lead</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <pivot string="CRM Lead Analysis">-->
+<!--                <field name="stage_id" type="row"/>-->
+<!--                <field name="country_id" type="row"/>-->
+<!--                <field name="user_id" type="col"/>-->
+<!--                <field name="expected_revenue" type="measure"/>-->
+<!--                <field name="probability" type="measure"/>-->
+
+
+<!--            </pivot>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <record id="view_custom_crm_lead_pivot" model="ir.ui.view">
+        <field name="name">crm.lead.pivot</field>
+        <field name="model">crm.lead</field>
+        <field name="arch" type="xml">
+            <pivot string="CRM Lead Analysis">
+                <field name="stage_id" type="row"/>
+                <field name="country_id" type="row" />
+<!--                <field name="campaign_id" type="row" />-->
+                <field name="expected_revenue" type="measure"/>
+                <field name="probability" type="measure"/>
+                <field name="day_close" type="measure"/>
+<!--                <field name="days_to_assign" type="measure"/>-->
+                <field name="automated_probability" type="measure"/>
+                <field name="recurring_revenue_prorated" type="measure"/>
+                <field name="prorated_revenue" type="measure"/>
+                <field name="qty" type="measure"/>
+                <field name="weight" type="measure"/>
+<!--                <field name="__count" type="measure" string="Total Leads"/>-->
+            </pivot>
+        </field>
+    </record>
+
+
+    <!-- Graph View -->
+    <record id="view_custom_crm_lead_graph" model="ir.ui.view">
+        <field name="name">crm.lead.graph</field>
+        <field name="model">crm.lead</field>
+        <field name="arch" type="xml">
+            <graph string="CRM Lead Trends" type="bar">
+                <field name="stage_id" type="row"/>
+                <field name="expected_revenue" type="measure"/>
+                <field name="probability" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+</odoo>

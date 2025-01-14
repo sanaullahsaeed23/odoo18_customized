@@ -1,0 +1,156 @@
+/* Primary Background Color */
+body, .o_main, .o_content {
+    /*background-color: #1E5C94; /* Replace with primary background color */
+}
+body .o_navbar {
+    color: #0d0f68 !important; /* Apply your custom color */
+}
+header.o_navbar .o_main_navbar {
+background-color: #0d0f68;
+color: #FFFFFF
+}
+header.o_menu_sections > li > a.active {
+    background-color: #bd2130; /* Even darker red for active state */
+    border: 1px solid #a71d2a; /* Optional border for active button */
+    color: white; /* White text */
+}
+
+/* Style the container div */
+header.o_navbar .o_menu_sections {
+    background-color: #0d0f68; /* Deep blue background */
+    color: #FFFFFF; /* White text for buttons */
+    border-radius: 4px; /* Optional: Rounded corners for the section */
+}
+
+/* Style the dropdown buttons (Sales, Reporting, Configuration) */
+
+/* *********** *************Main Header Button *************** */
+header.o_navbar .o_menu_sections .o-dropdown {
+    background-color: #0d0f68; /* Match the navbar color */
+    color: #FFFFFF; /* White text for buttons */
+    border: none; /* Remove default button borders */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+   /* padding: 5px 15px; /* Add padding for better spacing */
+    border-radius: 4px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+header.o_navbar .o_menu_sections .o-dropdown:hover{
+  background-color: #1E5C94; /* Slightly lighter blue for hover */
+  color: #FFFFFF; /* Ensure text remains white */
+}
+
+header.o_navbar .o_menu_sections .o-dropdown button {
+    background-color: #0d0f68; /* Match the navbar color */
+    color: #FFFFFF; /* White text for buttons */
+    border: none; /* Remove default button borders */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+   /* padding: 5px 15px; /* Add padding for better spacing */
+    border-radius: 4px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for dropdown buttons */
+header.o_navbar .o_menu_sections .o-dropdown button:hover {
+    background-color: #1E5C94; /* Slightly lighter blue for hover */
+    color: #FFFFFF; /* Ensure text remains white */
+}
+
+/* Style the dropdown menu */
+header.o_navbar .o_menu_sections .o-dropdown .dropdown-menu {
+    background-color: #1E5C94; /* Slightly lighter blue for dropdown background */
+    color: #FFFFFF; /* White text in dropdown */
+    border: none; /* Remove default dropdown border */
+}
+
+/* Style for the dropdown header */
+header.o_navbar .o_menu_sections .dropdown-menu .dropdown-header {
+    color: #FECD59; /* Highlight yellow color */
+   /* font-weight: bold; /* Make the text bold for emphasis */
+   /* background-color: transparent; /* Optional: Transparent background */
+   /* padding: 8px 15px; /* Add padding for better spacing */
+    /*border-bottom: 1px solid #1E5C94; /* Optional: Add a separator line */
+    /*font-size: 12px; /* Adjust font size */
+}
+
+header.o_navbar .o_main_navbar .o_nav_entry{
+    background-color: #0d0f68; /* Match the navbar color */
+}
+
+/* Dropdown items inside the menu */
+header.o_navbar .o_menu_sections .o-dropdown .dropdown-menu a {
+    color: #FFFFFF; /* White text for dropdown items */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensure full-width clickable items */
+}
+/* Calendar Table Header Text Color */
+.fc-dayGridMonth-view .fc-col-header-cell,
+.fc-timeGridWeek-view .fc-col-header-cell {
+    color: #FFFFFF !important; /* Set header text color to white */
+}
+
+/* Exclude Other Calendar Text */
+.fc-daygrid-day-number,
+.fc-daygrid-day-events {
+    color: inherit !important; /* Reset text color for non-header elements */
+}
+
+/* Hover effect for dropdown items */
+header.o_navbar .o_menu_sections .o-dropdown .dropdown-menu a:hover {
+    background-color: #FECD59; /* Highlight yellow for hover */
+    color: #000000; /* Black text for contrast */
+}
+
+/* Active or focused dropdown item */
+header.o_navbar .o_menu_sections .o-dropdown .dropdown-menu a:focus,
+header.o_navbar .o_menu_sections .o-dropdown .dropdown-menu a:active {
+    background-color: #FECD59; /* Highlight yellow for active items */
+    color: #000000; /* Black text */
+}
+
+
+/* Highlight or Action Buttons */
+button, .btn-primary, .btn-success, .o_kanban_view .o_kanban_record_highlight {
+    background-color: #FECD59; /* Highlight yellow */
+    color: #000000; /* Black text for contrast */
+}
+
+/* Default Font Color for Titles */
+h1, h2, h3, h4, h5, h6, .o-kanban-header-title, .o-kanban-group-header {
+    /*color: #FFFFFF; /* White text for titles */
+}
+
+/* Cards and Kanban Items */
+.o_kanban_view .o_kanban_record {
+    background-color: #000000; /* Black for card background */
+    /*color: #FFFFFF; /* White text for contrast */
+    border: 1px solid #FECD59; /* Highlight border */
+}
+
+/* Table Headers */
+table thead {
+    background-color: #0d0f68; /* Deep blue header */
+    color: #FFFFFF;
+
+}
+
+/* Table Rows Hover Effect */
+table tbody tr:hover {
+    background-color: #FECD59; /* Highlight yellow on hover */
+    color: #000000; /* Black text */
+}
+
+/* Links and Active Elements */
+a, .nav-link, .breadcrumb-item a {
+    color: #FECD59; /* Highlight yellow for links */
+    text-decoration: none;
+}
+
+
+
+/* Footer */
+.o_footer {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+}

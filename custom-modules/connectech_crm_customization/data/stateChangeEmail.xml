@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <!-- Email Template for Stage Change -->
+        <record id="email_lead_stage_change_template" model="mail.template">
+            <field name="name">Lead Stage Change Notification</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="subject">Lead Stage Changed: ${ctx.get('lead_name')}</field>
+            <field name="email_from">sanaullahsaeed41@gmail.com</field>
+            <field name="partner_to">{{ object.user_id.partner_id.id }}</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>Dear ${ctx.get('responsible_user')},</p>
+                    <p>The lead "<strong>${ctx.get('lead_name')}</strong>" has been moved:</p>
+                    <ul>
+                        <li>From: <strong>${ctx.get('old_stage')}</strong></li>
+                        <li>To: <strong>${ctx.get('new_stage')}</strong></li>
+                    </ul>
+                    <p>Kind regards,<br/>Odoo CRM</p>
+                ]]>
+            </field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>

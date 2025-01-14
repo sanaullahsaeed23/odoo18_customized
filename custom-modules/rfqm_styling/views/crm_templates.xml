@@ -1,0 +1,15 @@
+<odoo>
+<!--    <template id="custom_web_layout" inherit_id="web.layout">-->
+<!--        &lt;!&ndash; Modify the header if it exists in web.layout &ndash;&gt;-->
+<!--        <xpath expr="//header[@class='o_main_navbar']" position="attributes">-->
+<!--            <attribute name="style">background-color: #0d0f68; color: #FFFFFF;</attribute>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+<!--    <template id="custom_crm_kanban" inherit_id="crm.crm_lead_kanban_view">-->
+<!--        &lt;!&ndash; Modify Kanban card style &ndash;&gt;-->
+<!--        <xpath expr="//div[@class='o_kanban_record']" position="attributes">-->
+<!--            <attribute name="style">background-color: #000000; color: #FFFFFF; border: 1px solid #FECD59;</attribute>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

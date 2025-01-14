@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Root Menu -->
+    <menuitem id="menu_custom_crm_lead_root" name="Custom Features" parent="crm.crm_menu_root"  sequence="40"/>
+
+    <!-- Submenus -->
+    <menuitem id="menu_custom_crm_lead" name="Leads Form" parent="menu_custom_crm_lead_root" action="action_custom_crm_lead" sequence="11" />
+    <menuitem id="menu_custom_crm_report" name="Leads Report" parent="menu_custom_crm_lead_root" action="action_custom_crm_report" sequence="12" />
+    <menuitem id="menu_print_reports" name="Print Reports" parent="menu_custom_crm_lead_root" sequence="13" />
+
+    <!-- Print Reports Submenus -->
+    <menuitem id="menu_custom_crm_report_pdf" name="Print All Leads" parent="menu_print_reports" action="action_report_print_crm_leads" sequence="14" />
+    <menuitem id="menu_report_pdf_filters" name="Filter Reports" parent="menu_print_reports" action="action_crm_lead_report_wizard" sequence="15" />
+</odoo>

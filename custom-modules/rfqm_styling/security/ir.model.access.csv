@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rfqm_styling_rfqm_styling,rfqm_styling.rfqm_styling,model_rfqm_styling_rfqm_styling,base.group_user,1,1,1,1

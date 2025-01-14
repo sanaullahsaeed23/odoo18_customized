@@ -1,0 +1,30 @@
+<odoo>
+<!--    <record id="crm_lead_form_view_custom" model="ir.ui.view">-->
+<!--        <field name="name">crm.lead.form.custom</field>-->
+<!--        <field name="model">crm.lead</field>-->
+<!--        <field name="inherit_id" ref="crm.crm_lead_view_form" />-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//sheet//page[@name='internal_notes']" position="inside">-->
+<!--&lt;!&ndash;                <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label for="technical_specs">Technical Specs</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="technical_specs" string="Technical Specifications" placeholder="Enter technical specifications" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="qty" string="Quantity" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="size" string="Size" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </group>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="product_color" string="Product Color" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="material" string="Material" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </group>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="dimensions" string="Dimensions" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="weight" string="Weight" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </group>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <group>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <field name="image" string="Product Image" widget="image" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </group>&ndash;&gt;-->
+<!--&lt;!&ndash;                </group>&ndash;&gt;-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+</odoo>

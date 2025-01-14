@@ -1,0 +1,56 @@
+<odoo>
+    <record id="action_report_print_crm_leads" model="ir.actions.report">
+        <field name="name">CRM Lead Report</field>
+        <field name="model">crm.lead</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">custom_crm_lead.report_crm_lead_template</field>
+        <field name="report_file">custom_crm_lead.report_crm_lead_template</field>
+        <field name="binding_model_id" ref="crm.model_crm_lead"/>
+    </record>
+
+    <template id="report_crm_lead_template">
+        <t t-call="web.external_layout">
+            <main>
+                <div class="page">
+                    <h2>CRM Lead Report</h2>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Country</th>
+                                <th>Expected Revenue</th>
+                                <th>Probability</th>
+                                <th>Day Close</th>
+                                <th>Automated Probability</th>
+                                <th>Recurring Revenue Prorated</th>
+                                <th>Prorated Revenue</th>
+                                <th>Quantity</th>
+                                <th>Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="lead">
+                                <tr>
+                                    <td><t t-esc="lead.stage_id" /></td>
+                                    <td><t t-esc="lead.country_id" /></td>
+                                    <td><t t-esc="lead.expected_revenue" /></td>
+                                    <td><t t-esc="lead.probability" />%</td>
+                                    <td><t t-esc="lead.day_close" /></td>
+                                    <td><t t-esc="lead.automated_probability" /></td>
+                                    <td><t t-esc="lead.recurring_revenue_prorated" /></td>
+                                    <td><t t-esc="lead.prorated_revenue" /></td>
+                                    <td><t t-esc="lead.qty" /></td>
+                                    <td><t t-esc="lead.weight" /></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </t>
+    </template>
+
+
+
+
+</odoo>
